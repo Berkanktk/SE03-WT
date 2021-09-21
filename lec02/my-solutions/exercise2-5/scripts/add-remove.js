@@ -35,4 +35,3 @@ $(document).ready(function () {
     else
       $('.tracks .add').prop("disabled",false);
   }
-  
