@@ -6,12 +6,13 @@ $(document).ready(function () {
     $("form").on('submit', function (e) {
       let formValid = {valid:true};
       hideAllValidation();
+
       let input = $('input[name=name]');
       if(!input.val())
         alertNonValid(input, formValid);
   
       input = $('input[name=year]');
-      if(!(input.val() && Number(input.val()) < 2021))
+      if(!(input.val() && Number(input.val()) <= 2021))
         alertNonValid(input,formValid);
   
       if(!$('input[name=type]:checked').length)
@@ -30,7 +31,6 @@ $(document).ready(function () {
         alertNonValid(input, formValid);
     });
   }
-  
   
   function alertNonValid(input, formValid) {
     input.closest('.inputGroup').children(".invalid-feedback").show();

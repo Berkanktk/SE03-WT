@@ -3,7 +3,7 @@ $(document).ready(function () {
   });
   
   function fillAlbums(){
-    $.get( "http://localhost:8000", function( data ) {
+    $.get("http://localhost:8000", function( data ) {
       if(data.length == 0){
         $("#albums").append($("<p>No albums found :(</p>"));
         return;
