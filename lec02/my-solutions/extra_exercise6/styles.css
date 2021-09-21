@@ -1,0 +1,20 @@
+#titleAndMode {
+    display: flex;
+    align-items: center;
+  }
+
+  #titleAndMode h1 {
+    margin-right: 25px;
+  }
+
+  .playerButton{
+    font-size: 24px;
+  }
+
+  #resetButton {
+    display: none;
+  }
+
+  li h2 {
+    margin: 0;
+  }

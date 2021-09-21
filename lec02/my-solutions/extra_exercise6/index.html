@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <!-- Inspired by: https://happycoding.io/examples/javascript/game-of-nim-->
+
+<html>
+	<head>
+		<title>Game of Nim</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="app.js" defer></script>
+	</head>
+  
+	<body>
+    <div id="titleAndMode">
+      <h1>Game of Nim</h1>
+      <div>
+        <label>
+          <input type="radio" id="easyMode" name="mode" checked>
+          Easy
+        </label>
+        <br>
+        <label><input type="radio" id="hardMode" name="mode">Hard</label>
+      </div>
+    </div>
+
+    <h2 id="total">21</h2>
+
+    <button id="oneButton"    class="playerButton"    onclick="subtractPlayerChoice(1)">-1</button>
+    <button id="twoButton"    class="playerButton"    onclick="subtractPlayerChoice(2)">-2</button>
+    <button id="threeButton"  class="playerButton"    onclick="subtractPlayerChoice(3)">-3</button>
+
+    <ul id="log">
+      <li>Game starts at 21.</li>
+      <li>Take turns subtracting 1, 2, or 3.</li>
+      <li>Win by leaving your opponent with 1.</li>
+    </ul>
+
+    <button id="resetButton" onclick="reset()">Reset</button>
+	</body>
+</html>
