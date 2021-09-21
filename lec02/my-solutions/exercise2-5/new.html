@@ -21,22 +21,23 @@
 
           <div class='grid inputGroup'>
             <label> Name: </label>
-            <input type="text" name="name" id="name" class="inputForm"/>
+            <input type="text" name="name" id="name" class="inputForm" placeholder="E.x 'Grand Album'"/>
             <div class="invalid-feedback">Please provide a valid name.</div>
           </div>
 
           <div class='grid inputGroup'>
             <label> Year: </label>
-            <input type="number" name="year" id="year" class="inputForm"/>
+            <input type="number" name="year" id="year" class="inputForm" placeholder="E.x '2012'"/>
             <div class="invalid-feedback">Please provide a valid year.</div>
           </div>
 
           <div class='grid inputGroup'>
             <label> Artist: </label>
             <select name="artist" id="artist" class="inputForm">
-              <option value="matt_elliott">Matt Elliott</option>
-              <option value="low_roar">Low Roar</option>
-              <option value="mum">Múm</option>
+              <option value="Select"></option>Select</option>
+              <option value="Khalid">Khalid</option>
+              <option value="hopsin">Hopsin</option>
+              <option value="tupac">Billie Eilish</option>
             </select>
             <div class="invalid-feedback">Please provide a valid name.</div>
           </div>
@@ -63,7 +64,7 @@
             <label> Tracks: </label>
             <div class='grid inputs'>
               <div class = 'track'>
-                <input type="text" name="track" class="inputForm"/>
+                <input type="text" name="track" class="inputForm" placeholder="Track name here"/>
                 <button class="remove fas fa-trash" type='button' disabled='disabled'></button>
               </div>
             </div>
