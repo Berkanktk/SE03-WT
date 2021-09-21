@@ -11,7 +11,7 @@ $(document).ready(function () {
         alertNonValid(input, formValid);
   
       input = $('input[name=year]');
-      if(!(input.val() && Number(input.val()) < 2023))
+      if(!(input.val() && Number(input.val()) < 2021))
         alertNonValid(input,formValid);
   
       if(!$('input[name=type]:checked').length)
