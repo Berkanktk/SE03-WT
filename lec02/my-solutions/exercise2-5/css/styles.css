@@ -16,16 +16,6 @@ h1 {
     color: #daad1d ;
     text-decoration: underline;
 }
-h2 {
-    color: #daad1d ;
-    text-decoration: underline;
-    margin-left: 8px;
-}
-
-body{
-    font-family: Tahoma;
-    letter-spacing: 1px;
-}
 
 form {
   display: inline-grid;
@@ -36,11 +26,7 @@ form {
   display: grid;
 }
 
-.tracks {
-  grid-row-gap: 5px;
-}
-
-.inputs {
+.tracks, .inputs {
   grid-row-gap: 5px;
 }
 
