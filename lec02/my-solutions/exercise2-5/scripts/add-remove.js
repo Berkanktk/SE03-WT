@@ -10,6 +10,7 @@ $(document).ready(function () {
       track.appendTo(".inputs");
   
       toggleRemoveButton();
+      toggleAddButton();
     });
   }
   
@@ -17,6 +18,7 @@ $(document).ready(function () {
     $(".tracks").on('click', '.remove', function () {
       $(this).parent().remove();
       toggleRemoveButton();
+      toggleAddButton()
     });
   }
   
@@ -26,3 +28,11 @@ $(document).ready(function () {
     else
       $('.track button').prop("disabled",true);
   }
+
+  function toggleAddButton(){
+    if($('.track').length == 20)
+      $('.tracks .add').prop("disabled",true);
+    else
+      $('.tracks .add').prop("disabled",false);
+  }
+  
